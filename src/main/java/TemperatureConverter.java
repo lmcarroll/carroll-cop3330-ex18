@@ -13,7 +13,7 @@ public class TemperatureConverter {
 
         int fahrenheit;
         int celsius;
-        if (choice.equals("F")) {
+        if (choice.equals("F") || choice.equals("f")) {
             System.out.println("Please enter the temperature in Fahrenheit: ");
             input = new Scanner(System.in);
             fahrenheit = input.nextInt();
@@ -22,7 +22,7 @@ public class TemperatureConverter {
 
             System.out.println("The temperature in celsius is " + celsius + ".");
         }
-        if (choice.equals("C")) {
+        if (choice.equals("C") || choice.equals("c")) {
             System.out.println("Please enter the temperature in Celsius: ");
             input = new Scanner(System.in);
             celsius = input.nextInt();
